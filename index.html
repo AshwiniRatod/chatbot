@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Chatbot Interface</title>
 </head>
 <body>
+    
     <div class="chat-container">
-        <div class="user-chat-box">
-            <img src = "us.png" alt = "" id="userImage" width="50">
-            <div class="user-chat-area">
-
-            </div>
-
-        </div>
         <div class="ai-chat-box">
-            <img src = "aii.png" alt = "" id="aiImage" width="50">
+            <img src="ro.png" alt="AI" id="aiImage" width="50">
             <div class="ai-chat-area">
-                Hello! How can I help you.
+                Hello! How can I help you?
             </div>
-            <img src="load.mp4" alt="" class="load" width="100%">
         </div>
-
     </div>
+
+
     <div class="prompt-area">
         <input type="text" id="prompt" placeholder="Message...">
-        <button id="image"><img src="img.svg" alt="" ></butto>
-        <button id="submit"><img src="submit.svg" alt="" ></butto>
+        <button id="image">
+            <img src="img.svg" alt="Upload Image">
+        </button>
+        <button id="submit">
+            <img src="submit.svg" alt="Send">
+        </button>
     </div>
-    <script src = "script.js">
 
-    </script>
+   
+    <div id="image" style="display:none;">
+        <input type="file" id="imageInput" accept="image/*">
+        <img id="uploadedImage" alt="Uploaded Image Preview">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
